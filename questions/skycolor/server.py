@@ -1,21 +1,21 @@
-import random
-import prairielearn as pl
+
 
 class SkyColorQuestion:
-    def generate(self):
-        question = pl.Question()
-        question.prompt = "What is the color of the sky?"
-        
-        choices = ["Blue", "Green", "Orange"]
-        correct_answer = random.choice(choices)
-        
-        question.add_choice(correct_answer, True)
-        choices.remove(correct_answer)
-        
-        for choice in choices:
-            question.add_choice(choice, False)
-        
-        question.shuffle_choices()
-        question.correct_answer = correct_answer
-        
-        return question
+    def generate(data):
+        # This function is called to generate the parameters for the question
+        # You could set up any initial data or select which version of the question to show
+        pass
+
+    def grade(data):
+        # This function is called to grade the student's submission
+        # Access the uploaded file
+        uploaded_file = data['submitted_answers']['mean.xml']
+
+        # Process the XML file
+        # (Your logic to read and validate the XML file would go here)
+        # You could parse the XML, perform calculations, etc.
+
+        # Return the grade and any feedback
+        data['score'] = 1.0 if is_correct else 0.0
+        data['feedback'] = 'Your custom feedback message'
+
