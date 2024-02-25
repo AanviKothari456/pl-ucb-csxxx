@@ -1,37 +1,22 @@
 {
     "uuid": "4654F81A-50D2-4C35-907D-C7F5994DFDAB",
-    "title": "Aanvi Kothari: color of sky",
-    "topic": "SKY COLOR",
-    
-    "tags": ["mwest", "tpl101", "v3"],
-    "type": "v3"
-}
-
-
-
-{
-    "uuid": "4654F81A-50D2-4C35-907D-C7F5994DFDAB",
     "title": "Aanvi Kothari:abcde",
     "topic": "mean",
     "tags": ["mwest", "tpl101", "v3"],
     "type": "v3",
     "singleVariant": true,
     "workspaceOptions": {
-        "image": "codercom/code-server",
-        "port": 8080,
-        "home": "/home/coder",
-        "args": "--auth none",
-        "gradedFiles": [
-            "mean.xml"
-            // Add other files if necessary
-        ]
+      "image": "codercom/code-server",
+      "port": 8080,
+      "home": "/home/coder",
+      "args": "--auth none",
+      "gradedFiles": ["mean.xml"]
     },
     "gradingMethod": "External",
     "externalGradingOptions": {
-        "enabled": true,
-        "image": "prairielearn/grader-python",
-        "entrypoint": ["/grade.py"],
-        "timeout": 20
+      "enabled": true,
+     
+      "timeout": 20
     }
-}
-
+  }
+  
